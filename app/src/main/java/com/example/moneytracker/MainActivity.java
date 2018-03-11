@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume(){
-        super.onStart();
-        Log.d(TAG,"Activity получает фокус");
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "Activity получает фокус");
     }
 
     @Override
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onDestroy() {
-        super.onStop();
-        Log.d(TAG, "Activity уничтожено");}
+        super.onDestroy();
+        Log.d(TAG, "Activity уничтожено");
+    }
 }
